@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	background: url("jpg/by.jpg");
+	font-family: sans-serif;
+	background-size: cover;
+}
+.box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rtba(0,0,0,.8);
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+.box h2{
+	margin: 0 0 30px;
+	padding: 0;
+	color: #E71F78;
+	text-align: center;
+}
+.box .inputBox{
+	position:relative;
+}
+.box .inputBox input{
+	with: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #7D7979;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .inputBox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #7D7979;
+	pointer-events: none;
+	transition: .5s;
+}
+.box input[type='submit']{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #02F209;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 11px;
+  padding: 8px;
+  width: 65px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.div_footer {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: pink;
+}
+.div_footer p{
+	font-family: "Tahoma"；
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

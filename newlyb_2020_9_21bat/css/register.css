@@ -1,0 +1,164 @@
+
+/* 头部样式 */
+.header {
+  background-color: #12EFF0;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url("jpg/dm_nv2.png");
+	font-family: sans-serif;
+	background-size: cover;
+}
+
+.box{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	padding: 40px;
+	background: rtba(0,0,0,.8);
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+.fm {
+	
+  width: 45%;
+  height: 6.5vh;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: Sans-serif;
+  border-radius: 10px;
+}
+
+form input {
+  height: 2rem;
+  width: 20rem;
+  padding-top: 1rem;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  outline: none;
+}
+
+form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+form label::after {
+  content: "";
+  height: 3rem;
+  width: 15rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 0.2rem solid #1cb9b6;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+form label span {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+form input:focus + label span,
+form input:valid + label span {
+  transform: translateY(-120%);
+  font-size: 1.2rem;
+  color: #1cb9b6;
+}
+
+form input:focus + label::after,
+form input:valid + label::after {
+  transform: translateX(0);
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 11px;
+  padding: 8px;
+  width: 65px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.div_footer {
+    position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	background: pink;
+}
+.div_footer p{
+	font-family: "Tahoma"；
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+  .box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  padding: 20px;
+  background: rtba(0,0,0,.8);
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+}
+
+.fm {
+  
+  width: 40%;
+  height: 6.4vh;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: Sans-serif;
+  border-radius: 10px;
+}
+}
